@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yasin Burak Ayhan</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #000;
+            color: #fff;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 20px;
+        }
+        h1, h2 {
+            margin-bottom: 10px;
+        }
+        .social-icons {
+            margin: 20px 0;
+        }
+        .social-icons a {
+            color: #fff;
+            font-size: 24px;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+        .section {
+            margin: 40px 0;
+        }
+        .section-title {
+            font-size: 24px;
+            border-bottom: 2px solid #fff;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .gallery img {
+            width: calc(30% - 10px); /* Resimlerin genişliğini ayarlayın */
+            height: auto; /* Yükseklik otomatik olsun */
+            object-fit: cover;
+            margin: 5px; /* Resimler arası boşluk */
+            cursor: pointer;
+        }
+        .video-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+        }
+        .video-container iframe {
+            flex: 1 1 calc(50% - 10px);
+            height: 315px;
+        }
+        /* Lightbox CSS */
+        .lightbox {
+            display: none;
+            position: fixed;
+            z-index: 999;
+            padding-top: 60px;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.9);
+        }
+        .lightbox-content {
+            margin: auto;
+            display: block;
+            width: 80%;
+            max-width: 700px;
+        }
+        .lightbox-content img {
+            width: 100%;
+        }
+        .close {
+            position: absolute;
+            top: 20px;
+            right: 35px;
+            color: #fff;
+            font-size: 40px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+        .close:hover,
+        .close:focus {
+            color: #bbb;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="https://i.hizliresim.com/1ctj8ih.jpeg" alt="Yasin Burak AYHAN" class="profile-img">
+        <h1>Yasin Burak AYHAN</h1>
+        <h2>Tasarımcı</h2>
+        
+        <div class="social-icons">
+            <a href="ddddddd" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="ddddddd" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="dddddddd" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="dddddddd" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="ddddddddd" target="_blank"><i class="fab fa-youtube"></i></a>
+        </div>
+
+        <div class="section">
+            <h3 class="section-title">Ben Kimim</h3>
+            <p>test</p>
+        </div>
+
+        <div class="section">
+            <h3 class="section-title">Çalışmalarım</h3>
+            <div class="gallery">
+                <img src="https://i.hizliresim.com/o345kfy.jpeg" alt="Gitar">
+                <img src="https://i.hizliresim.com/r4j76zr.png" alt="Mutfak1">
+                <img src="https://i.hizliresim.com/cntuqa5.png" alt="Anıtkabir">
+                <img src="https://i.hizliresim.com/94sa73h.png" alt="Ev">
+                <img src="https://i.hizliresim.com/nz72clf.png" alt="Kafe1">
+                <img src="https://i.hizliresim.com/jc3bktl.png" alt="Kafe2">
+                <img src="https://i.hizliresim.com/itm1wgd.png" alt="Kafe3">
+                <img src="https://i.hizliresim.com/iogspq0.png" alt="Kafe4">
+                <img src="https://i.hizliresim.com/lkuyug6.png" alt="Mutfak2">
+                <img src="https://i.hizliresim.com/4g383d6.png" alt="Mutfak3">
+                <img src="https://i.hizliresim.com/i5uymet.png" alt="Ofis1">
+                <img src="https://i.hizliresim.com/lxzvdlv.png" alt="Ofis2">
+                <img src="https://i.hizliresim.com/8qzsw9l.png" alt="Masa">
+                <img src="https://i.hizliresim.com/bhf3w75.png" alt="Park">
+                <img src="https://i.hizliresim.com/ofd9ypy.png" alt="Banyo1">
+                <img src="https://i.hizliresim.com/r07uwu2.png" alt="Banyo2">
+                <img src="https://i.hizliresim.com/nx5qdr6.png" alt="Banyo3">
+                <img src="https://i.hizliresim.com/rk0a8ou.png" alt="Banyo4">
+                <img src="https://i.hizliresim.com/acz2juo.png" alt="Çankırı">
+                <img src="https://i.hizliresim.com/k6e8sc2.png" alt="Mutfak4">
+                <img src="https://i.hizliresim.com/5cpsct7.png" alt="Ofis3">
+                <!-- Daha fazla proje ekleyebilirsiniz -->
+            </div>
+        </div>
+		
+        <div class="section">
+            <h3 class="section-title">Animasyonlarım</h3>
+            <div class="video-container">
+                
+                <!-- Daha fazla video ekleyebilirsiniz -->
+            </div>
+        </div>
+
+        <div class="section">
+            <h3 class="section-title">İletişim</h3>
+            <p>E-posta: ysnbrk000@gmail.com</p>
+            <p>Yasin Burak AYHAN @2024</p>
+        </div>
+    </div>
+
+    <!-- Lightbox -->
+    <div id="lightbox" class="lightbox">
+        <span class="close">×</span>
+        <div class="lightbox-content">
+            <img id="lightbox-img" src="">
+        </div>
+    </div>
+
+    <script>
+        // Lightbox script
+        const galleryImages = document.querySelectorAll('.gallery img');
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImg = document.getElementById('lightbox-img');
+        const close = document.querySelector('.close');
+
+        galleryImages.forEach(image => {
+            image.addEventListener('click', () => {
+                lightbox.style.display = 'block';
+                lightboxImg.src = image.src;
+            });
+        });
+
+        close.addEventListener('click', () => {
+            lightbox.style.display = 'none';
+        });
+
+        lightbox.addEventListener('click', (e) => {
+            if (e.target !== lightboxImg) {
+                lightbox.style.display = 'none';
+            }
+        });
+    </script>
+</body>
+</html>
